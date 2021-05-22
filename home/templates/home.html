@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('/static/images/bg.jpg');
+            background-size: 100%;
+            background-position: center;
+            /* background-origin: center; */
+            background-repeat: no-repeat;
+            margin: 3px;
+            padding: 3px;
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .header {}
+
+        .left {
+            /* border: 3px solid red; */
+            display: inline-block;
+            float: left;
+            width: 136px;
+        }
+
+        .mid {
+            margin: auto;
+            width: 50%;
+            /* border: 3px solid blue; */
+            font-size: x-large;
+        }
+
+        .right {
+            /* border: 3px solid chartreuse; */
+            display: inline-block;
+            float: right;
+            position: absolute;
+            right: 23px;
+            top: 24px;
+            /* width: 50px; */
+        }
+
+        .left img {
+            width: 33px;
+            margin: 5px;
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .navbar li {
+            list-style: none;
+            display: inline-block;
+            padding: 3px 29px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .navbar li a:hover {
+
+            color: rgb(236, 248, 72);
+
+        }
+
+        .btn {
+            color: teal;
+            border-radius: 8px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .btn:hover {
+            background: #000;
+        }
+
+        .container {
+            border: 2px solid yellow;
+            margin: 90px;
+            padding: 25px;
+        }
+        input{
+            width: 180px;
+            height: 25px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <div class="lg">
+
+                <img src="/static/images/chatbot_logo.png" alt="">
+            </div>
+            <div>College Chatbot</div>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Service</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    
+</body>
+{% block body %}
+
+{% endblock body %}
+
+
+</html>
